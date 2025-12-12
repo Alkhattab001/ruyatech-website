@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "title": "Intelligent Digital Solutions",
+    "subtitle": "We design intelligent digital solutions that transform how organizations operate and innovate. Through AI, automation, and advanced software engineering, we turn complex challenges into efficient systems that drive sustainable growth."
+  },
+  "about": {
+    "purpose": {
+      "title": "Purpose",
+      "description": "RuyaTECH is dedicated to designing intelligent digital solutions that elevate the way organizations think, operate, and innovate. Our purpose is to transform complex challenges into smart, efficient systems by leveraging artificial intelligence, automation, and advanced software engineering. We aim to empower clients with solutions that not only address immediate needs but also support long-term growth, adaptability, and digital maturity."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Our mission is to collaborate closely with clients to understand their unique requirements and translate them into well-designed, intelligent solutions. We are committed to delivering systems that streamline operations, improve accuracy, and enhance decision-making through the thoughtful integration of AI and modern technologies. By combining research-driven insight with practical application, we create solutions that are both highly effective and intuitively accessible."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Our vision is to become a distinguished leader in the creation of intelligent digital ecosystems — solutions that seamlessly integrate AI, automation, and data intelligence to redefine efficiency across industries. We strive to contribute meaningfully to the evolving digital landscape by developing tools that support smarter businesses, stronger decision-making, and more adaptive technological environments."
+    }
+  },
+  "values": {
+    "title": "Core Values",
+    "items": [
+      {
+        "title": "Thoughtful Design",
+        "description": "We approach every challenge with analysis and intention, ensuring each solution is meaningful, effective, and aligned with client needs."
+      },
+      {
+        "title": "Intelligence in Action",
+        "description": "We embed smart technologies that enhance decision-making, automate complexity, and provide clarity where it matters most."
+      },
+      {
+        "title": "Innovation with Purpose",
+        "description": "Our creativity is guided by research, strategy, and the pursuit of long-term value, not trends."
+      },
+      {
+        "title": "Collaborative Partnership",
+        "description": "We listen, understand, and co-create with clients to ensure each solution genuinely supports their goals and ambitions."
+      },
+      {
+        "title": "Excellence & Integrity",
+        "description": "We deliver high-quality solutions grounded in reliability, transparency, and professional responsibility."
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions designed to transform your operations and drive meaningful digital growth",
+    "items": [
+      {
+        "title": "Digital Transformation",
+        "description": "Comprehensive strategies to modernize operations and build sustainable digital maturity."
+      },
+      {
+        "title": "Custom Software Development",
+        "description": "Tailored applications designed precisely for your environment, challenges, and growth objectives."
+      },
+      {
+        "title": "Process Automation",
+        "description": "Streamline repetitive tasks and complex workflows to reduce cognitive load and improve productivity."
+      },
+      {
+        "title": "System Integration",
+        "description": "Seamlessly connect and centralize your tools and information for a unified digital ecosystem."
+      },
+      {
+        "title": "Data Intelligence",
+        "description": "Transform raw data into meaningful insights with real-time dashboards and advanced analytics."
+      },
+      {
+        "title": "AI-Powered Solutions",
+        "description": "Intelligent systems that learn, adapt, and provide actionable insights to enhance decision-making and operational efficiency."
+      }
+    ]
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discover & Assess",
+        "description": "We conduct a structured assessment to understand your challenges, identify bottlenecks, and define clear objectives."
+      },
+      {
+        "number": "02",
+        "title": "Design & Plan",
+        "description": "Our team designs a tailored solution architecture that aligns with your environment and long-term goals."
+      },
+      {
+        "number": "03",
+        "title": "Develop & Integrate",
+        "description": "We build intelligent systems using cutting-edge technologies, ensuring seamless integration with your existing infrastructure."
+      },
+      {
+        "number": "04",
+        "title": "Deploy & Support",
+        "description": "We ensure smooth deployment and provide ongoing support to guarantee sustainable success and continuous improvement."
+      }
+    ],
+    "example": {
+      "title": "Real-World Impact",
+      "description": "Consider an organization facing fragmented workflows, manual documentation, and inconsistent decision-making. Rather than offering a generic product, RuyaTECH conducts a structured assessment to understand the organization's specific challenges, identifies operational bottlenecks, and designs an intelligent digital system tailored precisely to their environment.",
+      "features": [
+        "Automate repetitive tasks",
+        "Centralize and organize information",
+        "Provide real-time dashboards",
+        "Offer AI-powered recommendations",
+        "Reduce cognitive load for employees"
+      ],
+      "conclusion": "The result is not merely a software tool — it is a thoughtfully engineered solution that transforms the organization's operational capabilities and supports sustainable digital growth."
+    }
+  },
+  "contact": {
+    "title": "Let's Build Something Intelligent",
+    "subtitle": "Ready to transform your operations? Get in touch and let's discuss how we can help.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "companyPlaceholder": "Your company name",
+      "messagePlaceholder": "Tell us about your project or challenge...",
+      "submit": "Send Message"
+    },
+    "footer": "© 2024 RuyaTECH. Designing intelligent digital solutions."
+  }
+}
