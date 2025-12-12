@@ -4,8 +4,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import EvolvingBackground from "@/components/EvolvingBackground";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { locales } from '@/i18n/config';
@@ -51,12 +49,9 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <EvolvingBackground />
           <LanguageSwitcher />
           <WhatsAppButton />
-          <SmoothScroll>
-            {children}
-          </SmoothScroll>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
