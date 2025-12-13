@@ -24,7 +24,7 @@ export default function FixedRobot() {
     <div
       style={{
         position: 'fixed',
-        bottom: isMobile ? '-15%' : '-5%',
+        bottom: isMobile ? '-25%' : '-5%',
         left: '50%',
         transform: 'translateX(-50%)',
         width: isMobile ? '200px' : '500px',
