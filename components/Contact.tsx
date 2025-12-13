@@ -93,19 +93,27 @@ export default function Contact() {
       ref={sectionRef}
       className="min-h-screen px-6 py-16 relative flex items-center bg-background"
     >
-      <div className="max-w-4xl mx-auto w-full px-4">
+      <div className="max-w-5xl mx-auto w-full px-4 md:px-8">
         <div ref={formRef}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 md:mb-6 text-primary">
             {t('title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-foreground/90 mb-8 max-w-3xl" style={{ textAlign: 'justify', margin: '0 auto 2rem auto' }}>
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 mb-8 md:mb-12 max-w-3xl text-center" style={{ margin: '0 auto 2rem auto' }}>
             {t('subtitle')}
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground/90 mb-2">
+          <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+            {/* Name, Email, Company in row on desktop */}
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '1.5rem',
+                flexWrap: 'wrap'
+              }}
+            >
+              <div style={{ flex: '1 1 280px', minWidth: '280px' }}>
+                <label htmlFor="name" className="block text-sm md:text-base font-medium text-foreground/90 mb-2 md:mb-3">
                   {t('form.name')} *
                 </label>
                 <input
@@ -115,7 +123,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg transition-all"
+                  className="w-full px-4 py-3 md:py-4 rounded-lg transition-all"
                   style={{
                     backgroundColor: 'rgba(20, 20, 20, 0.8)',
                     border: '2px solid #b845ff',
@@ -132,8 +140,8 @@ export default function Contact() {
                   placeholder={t('form.namePlaceholder')}
                 />
               </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground/90 mb-2">
+              <div style={{ flex: '1 1 280px', minWidth: '280px' }}>
+                <label htmlFor="email" className="block text-sm md:text-base font-medium text-foreground/90 mb-2 md:mb-3">
                   {t('form.email')} *
                 </label>
                 <input
@@ -143,7 +151,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg transition-all"
+                  className="w-full px-4 py-3 md:py-4 rounded-lg transition-all"
                   style={{
                     backgroundColor: 'rgba(20, 20, 20, 0.8)',
                     border: '2px solid #b845ff',
@@ -160,38 +168,38 @@ export default function Contact() {
                   placeholder={t('form.emailPlaceholder')}
                 />
               </div>
+              <div style={{ flex: '1 1 280px', minWidth: '280px' }}>
+                <label htmlFor="company" className="block text-sm md:text-base font-medium text-foreground/90 mb-2 md:mb-3">
+                  {t('form.company')}
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 md:py-4 rounded-lg transition-all"
+                  style={{
+                    backgroundColor: 'rgba(20, 20, 20, 0.8)',
+                    border: '2px solid #b845ff',
+                    color: '#ffffff',
+                    fontSize: '16px',
+                    outline: 'none',
+                    boxShadow: '0 0 20px rgba(184, 69, 255, 0.3), inset 0 1px 3px rgba(184, 69, 255, 0.1)',
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                    appearance: 'none',
+                    WebkitTextFillColor: '#ffffff',
+                    opacity: 1
+                  }}
+                  placeholder={t('form.companyPlaceholder')}
+                />
+              </div>
             </div>
 
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-foreground/90 mb-2">
-                {t('form.company')}
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg transition-all"
-                style={{
-                  backgroundColor: 'rgba(20, 20, 20, 0.8)',
-                  border: '2px solid #b845ff',
-                  color: '#ffffff',
-                  fontSize: '16px',
-                  outline: 'none',
-                  boxShadow: '0 0 20px rgba(184, 69, 255, 0.3), inset 0 1px 3px rgba(184, 69, 255, 0.1)',
-                  WebkitAppearance: 'none',
-                  MozAppearance: 'none',
-                  appearance: 'none',
-                  WebkitTextFillColor: '#ffffff',
-                  opacity: 1
-                }}
-                placeholder={t('form.companyPlaceholder')}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-foreground/90 mb-2">
+            {/* Message full width */}
+            <div style={{ marginTop: '3.5rem', paddingTop: '1rem' }}>
+              <label htmlFor="message" className="block text-sm md:text-base font-medium text-foreground/90 mb-2 md:mb-3">
                 {t('form.message')} *
               </label>
               <textarea
@@ -201,7 +209,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={6}
-                className="w-full px-4 py-3 rounded-lg transition-all resize-none"
+                className="w-full px-4 py-3 md:py-4 rounded-lg transition-all resize-none"
                 style={{
                   backgroundColor: 'rgba(20, 20, 20, 0.8)',
                   border: '2px solid #b845ff',
@@ -219,9 +227,10 @@ export default function Contact() {
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-full md:w-auto px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
+            <div className="text-center" style={{ marginTop: '4rem' }}>
+              <button
+                type="submit"
+                className="w-full md:w-auto px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
               style={{
                 backgroundColor: '#b845ff',
                 color: '#ffffff',
@@ -247,6 +256,7 @@ export default function Contact() {
             >
               {t('form.submit')}
             </button>
+            </div>
           </form>
 
           <div className="mt-16 text-center">

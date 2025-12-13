@@ -4,9 +4,6 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-
-const Robot3D = dynamic(() => import('./Robot3D'), { ssr: false });
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -85,18 +82,14 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="h-screen flex items-start md:items-center justify-center px-6 pt-32 md:pt-0 relative overflow-hidden bg-background"
+      className="h-screen flex items-start md:items-center justify-center px-6 pt-32 md:pt-0 relative overflow-hidden"
+      style={{ background: 'transparent', position: 'relative', zIndex: 10 }}
     >
-      {/* 3D Robot - Only visible on desktop, positioned on the right */}
-      <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2 w-96 h-96 pointer-events-auto z-10">
-        <Robot3D />
-      </div>
-
       {/* Centered content container */}
       <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto w-full px-4 relative z-20">
         <div ref={logoRef} className="mb-8 md:mb-12 mt-8 md:mt-0">
           <Image
-            src="/noBgColor.png"
+            src="/new_logo_noBgColor.png"
             alt="RuyaTECH Logo"
             width={500}
             height={300}

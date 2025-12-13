@@ -36,6 +36,13 @@ body {
 
 section {
   position: relative;
+  background: transparent !important;
+  z-index: 10;
+}
+
+main {
+  position: relative;
+  z-index: 10;
 }
 
 section::after {

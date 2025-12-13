@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import "./globals.css";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FixedRobot from "@/components/FixedRobot";
 import { locales } from '@/i18n/config';
 
 const geistSans = Geist({
@@ -49,6 +50,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
+          <FixedRobot />
           <LanguageSwitcher />
           <WhatsAppButton />
           {children}
